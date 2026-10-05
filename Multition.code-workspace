@@ -1,0 +1,25 @@
+{
+  "folders": [
+    { "name": "Mobile", "path": "../multition-mobile" },
+    { "name": "Web", "path": "../multition-web" },
+    { "name": "Core API", "path": "../multition-api" },
+    { "name": "AI Service", "path": "../multition-ai" },
+    { "name": "Infrastructure", "path": "." },
+    { "name": "Documentation", "path": "../multition-docs" }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.venv": true,
+      "**/node_modules": true,
+      "**/dist": true
+    },
+    "search.exclude": {
+      "**/.venv": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/coverage": true
+    }
+  }
+}

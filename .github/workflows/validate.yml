@@ -1,0 +1,15 @@
+name: Validate infrastructure
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  shell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sh -n scripts/clone-all.sh
+      - run: sh -n scripts/doctor.sh
+      - run: docker compose -f compose.dev.yaml --profile apps config --quiet
